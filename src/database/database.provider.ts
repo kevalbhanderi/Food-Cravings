@@ -25,15 +25,15 @@ export const databaseProviders = [
 
       await sequelize.addModels([Users]);
 
-      await sequelize
-        .sync({ force: true })
-        .then(() => {
-          console.log('********** Db Connected Successfully **********');
-        })
-        .catch((err) => {
-          console.log(err);
-          console.log('********** Error in database connection **********');
-        });
+      // await sequelize
+      //   .sync({ force: true })
+      //   .then(() => {
+      //     console.log('********** Db Connected Successfully **********');
+      //   })
+      //   .catch((err) => {
+      //     console.log(err);
+      //     console.log('********** Error in database connection **********');
+      //   });
 
       return sequelize;
     },
