@@ -2,6 +2,7 @@ export const ErrorMessage = {
   USER_EXISTS: 'Email is already registered',
   INVALID_CREDS: 'Invalid email or password',
   USER_NOT_EXISTS: 'User does not exists',
+  RESTAURANT_NOT_EXISTS: 'Restaurant does not exists',
 };
 
 export const SuccessMessage = {

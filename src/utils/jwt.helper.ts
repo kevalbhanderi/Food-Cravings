@@ -21,7 +21,7 @@ export class JwtHelper {
     return token;
   }
 
-  async verify(token: string): Promise<false | JwtTokenInterface> {
+  async verify(token: string): Promise<JwtTokenInterface> {
     try {
       const payload = jwt.verify(
         token,
@@ -29,7 +29,7 @@ export class JwtHelper {
       ) as JwtTokenInterface;
       return { user_id: payload.user_id };
     } catch (e) {
-      return false;
+      console.log(e);
     }
   }
 

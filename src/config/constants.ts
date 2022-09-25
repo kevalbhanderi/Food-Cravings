@@ -1,1 +1,37 @@
 export const whiteListedEmail = ['admin@gmail.com'];
+
+export enum FoodType {
+  GUJARATI = 'GUJARATI',
+  PUNJABI = 'PUNJABI',
+  CHINESE = 'CHINESE',
+  SOUTHINDIAN = 'SOUTHINDIAN',
+}
+
+export enum GUJARATI {
+  ROTI = 'ROTI',
+  SABJI = 'SABJI',
+  DALBHAT = 'DAL-BHAT',
+  CHAAS = 'CHAAS',
+}
+
+export enum SOUTHINDIAN {
+  IDLISAMBHAR = 'IDLI-SAMBHAR',
+  DHOSA = 'DHOSA',
+  UTTAPAM = 'UTTAPAM',
+  PARATHA = 'PARATHA',
+  AMRITSARIKULCHA = 'AMRITSARI-KULCHA',
+}
+
+export enum PUNJABI {
+  PANEERMASALA = 'PANEERMASALA',
+  PANEERTIKA = 'PANEERTIKA',
+  JIRARICE = 'JIRA-RICE',
+  NAAN = 'NAAN',
+}
+
+export enum CHINESE {
+  MANCHURIAN = 'MANCHURIAN',
+  NOODLES = 'NOODLES',
+  SPRINGROLL = 'SPRING-ROLL',
+  DIMSUMS = 'DIM-SUMS',
+}
